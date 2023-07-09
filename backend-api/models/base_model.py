@@ -35,6 +35,7 @@ class BaseModel:
             do_sample=True,
             temperature=0.9,
             max_length=100,
+            pad_token_id=self.tokenizer.eos_token_id
         )
         # Decode the generated tokens to readable text
         gen_text = self.tokenizer.batch_decode(gen_tokens)[0]

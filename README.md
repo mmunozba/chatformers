@@ -16,7 +16,7 @@ Lean, model-agnostic framework for text generation models in the Huggingface tra
 1. Install Python.
 2. Terminal
 ```powershell
-cd backend/api
+cd backend-api
 pip install -r requirements.txt
-flask --app server run
+flask --app flask_server run
 ```
