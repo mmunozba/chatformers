@@ -4,15 +4,19 @@ Lean, model-agnostic framework for text generation models in the Huggingface tra
 ## Status
 | Feature | Status |
 | --- | --- |
-| REST API | ❌ |
+| REST API | ✅ |
 | Chat Frontend | ❌ |
-| Transformers Model Support | ❌ |
+| Transformers Model Support | ⚠️ |
+
+⚠️ Currently only supports basic inference with GPT Neo.
 
 ## Running locally
 
-### Prerequisites
+### Backend
 1. Install Python.
-2. Run
-`cd backend/api`
-`pip install -r requirements.txt`
-To be continued...
+2. Terminal
+```powershell
+cd backend/api
+pip install -r requirements.txt
+flask --app server run
+```
